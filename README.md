@@ -9,7 +9,7 @@ The many files LaTeX generates make me often hard to find the relevant files, li
 * [MiKTeX](http://miktex.org/) (because of the [-aux-directory](http://docs.miktex.org/manual/pdftex.html) flag)
 
 ## Usage
-Put all your .tex and .bib files into a folder you desire (the path must **NOT** contain spaces). Open a command prompt from that folder. Then type
+Put all your .tex and .bib files into a folder you desire. Open a command prompt from that folder. Then type
 ```
 makelatex fileName
 ```
