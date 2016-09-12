@@ -10,7 +10,7 @@ SET fileName=%1
 pdflatex -output-directory="%cd%" -aux-directory=metafiles %fileName%.tex
 
 :: Run bibtex
-bibtex --include-directory=metafiles metafiles\%fileName%.aux
+biber metafiles\%fileName%.bcf
 
 :: Create the nomenclature by invoking MakeIndex
 makeindex %fileName%.nlo -s %fileName%.ist -o %fileName%.nls
