@@ -9,7 +9,7 @@ SET fileName=%1
 :: Run pdflatex
 pdflatex -output-directory="%cd%" -aux-directory=metafiles %fileName%.tex
 
-:: Run bibtex
+:: Run biber
 biber metafiles\%fileName%.bcf
 
 :: Create the nomenclature by invoking MakeIndex
