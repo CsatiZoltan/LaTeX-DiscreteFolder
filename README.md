@@ -14,6 +14,7 @@ Put all your .tex and .bib files into a folder you desire. Open a command prompt
 makelatex fileName
 ```
 where `fileName` is your main .tex file. Give just the file name without the extension! The generated .pdf will be put into the main folder (i.e. where your main .tex file is), the other files are placed to the created metafiles folder.
+The [master](https://github.com/CsatiZoltan/LaTeX-DiscreteFolder/tree/master) branch contains the script for bibtex, while the [biber](https://github.com/CsatiZoltan/LaTeX-DiscreteFolder/tree/biber) branch for using it with biber.
 
 ## References
 * A [texblog article](http://texblog.org/2015/08/20/hiding-latex-metafiles-from-project-directory/j) gave me the main idea. Commenter P suggested to use the -aux-directory flag under Windows. It works with MiKTeX, I have no experience with TeX Live. This option enables us to put not only the output files, but also the auxiliary files into the metafiles folder.
